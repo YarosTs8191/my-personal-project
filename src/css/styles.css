@@ -2,3 +2,51 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+
+.hero {
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero-title {
+  color: #2e7d32;
+}
+
+.title-text {
+  color: #2e7d32;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#gallery {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.gallery {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
