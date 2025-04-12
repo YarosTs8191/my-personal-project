@@ -21,14 +21,34 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  cursor: url('../img/cursor.cur') 4 4, pointer;
 }
 
 button {
-  cursor: pointer;
+  cursor: url('../img/cursor.cur') 4 4, pointer;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
 }
